@@ -1,0 +1,13 @@
+.bad {
+    border-left: 10px solid #c0392b;
+}
+
+.good {
+    border-left: 10px solid #27ae60;
+}
+
+.role {
+    height: 10px;
+    width:10px;
+    border-radius: 15%;
+}
