@@ -52,7 +52,15 @@ export default {
             }).catch(function(error) {
                 console.log(error);
             });
+
+            this.clearFields();
+        },
+        clearFields() {
+            this.name = '';
+            this.link = '';
+            this.remarks = '';
         }
+
     }
 }
 </script>

@@ -1982,6 +1982,12 @@ __webpack_require__.r(__webpack_exports__);
       })["catch"](function (error) {
         console.log(error);
       });
+      this.clearFields();
+    },
+    clearFields: function clearFields() {
+      this.name = '';
+      this.link = '';
+      this.remarks = '';
     }
   }
 });
