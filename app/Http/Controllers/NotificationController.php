@@ -22,7 +22,7 @@ class NotificationController extends Controller
 
     public function getNotifs()
     {
-        $notifications = Notification::orderBy('created_at', 'DESC')->get();
+        $notifications = Notification::get();
         $count = Notification::count();
 
         return response()->json([
@@ -30,7 +30,6 @@ class NotificationController extends Controller
             'count' => $count,
         ]);
     }
-
 
     public function trigger(Request $request)
     {
