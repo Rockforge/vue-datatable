@@ -14,11 +14,11 @@ class SendNotification implements ShouldBroadcast
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
-    public $message;
+    public $notif;
 
-    public function __construct($message)
+    public function __construct($notif)
     {
-        $this->message = $message;
+        $this->notif = $notif;
     }
 
     public function broadcastOn()
