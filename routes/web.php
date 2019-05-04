@@ -26,3 +26,8 @@ Route::get('/all', function() {
     return Notification::orderBy('created_at', 'DESC')->get();
 });
 
+
+Route::get('/prs', function() {
+    return view('prs');
+});
+
